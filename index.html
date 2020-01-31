@@ -12,8 +12,8 @@ title: Homepage
   <ul class="posts">
     {% for post in paginator.posts %}
     <li itemscope itemtype="http://schema.org/BlogPosting">
+      <img itemprop="post image" src="{{ site.baseurl }}{{ post.featuredImg }}" />
       <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
-        <img itemprop="post image" src="{{ site.baseurl }}{{ post.featuredImg }}" />
         <div class="p-wrap">
           <article class="inner">
             <time datetime="{{ post.date | date_to_xmlschema }}"

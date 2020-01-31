@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  background: #f8f8f8;
   @media (max-width: 942px) {
     font-size: $font-size-m; 
   }
@@ -28,13 +29,12 @@ main {
 
 h2 { 
   font-size: 180%; 
-  font-style: italic; 
   margin: $spacing-s 0 $spacing-xs;
 }
 
 h3 { 
   font-size: 150%; 
-  font-weight: lighter; 
+  font-weight: 500; 
   margin: $spacing-sm 0 $spacing-xs;
 }
 
@@ -59,7 +59,8 @@ h6 {
 
 p { 
   margin: 1.3em 0; 
-  line-height: 1.6;
+  line-height: 2;
+  font-size: 18px;
 }
 
 small { 
@@ -69,3 +70,7 @@ small {
 ul li { list-style-type: circle; }
 ol li { list-style-type: decimal; }
 
+
+a {
+  color: $color-main;
+}

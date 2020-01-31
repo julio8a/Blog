@@ -11,9 +11,9 @@
 
     .p-wrap {
       margin: 0 0 0 0;
-      padding: 0 0 20px 50px;
+      padding: 50px 0 50px 50px;
       position: relative;
-      top: -119px;
+      top: -228px;
       transition: all .15s ease-in;
       color: #fff;
       z-index: 1;
@@ -26,10 +26,12 @@
         text-decoration: none;
         font-style: normal;
         font-size: 54px;
-        margin-top: 5px;
       }
       .inner {
         transition: all .15s ease-in;
+        &:hover {
+          margin-left: 30px;
+        }
       }
     } // end .p-wrap
 
@@ -50,7 +52,6 @@
 
     img {
       width: 100%;
-      height: 100%;
       position: relative;
       top: 0;
       left: 0;
