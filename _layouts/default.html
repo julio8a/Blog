@@ -91,15 +91,15 @@
     <div id="header">
       <nav>
         <div class="wrapper">
-          <div id="logo" class="home">
+          <a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" id="logo" class="home">
             <h1>Julio Ochoa</h1>
             <img src="{{ site.baseurl }}/assets/img/logo.png" />
-          </div>
+          </a>
           <ul>
-            <li><a href="#" class="home">home</a></li>
-            <li><a href="#" class="about">about</a></li>
-            <li><a href="#" class="contact">contact</a></li>
-            <li><a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" class="blog current">blog</a></li>
+            <li><a href="#" class="home">Work</a></li>
+            <li><a href="#" class="about">About</a></li>
+            <li><a href="#" class="contact">Contact</a></li>
+            <li><a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" class="blog current">Blog</a></li>
           </script>
           </ul>
         </div>
@@ -113,7 +113,7 @@
         {{ content }}
       </main>
 
-    <div class="off-canvas">
+    <div class="single-wrap">
       <nav>
         <h6>Follow me on</h6>
         <ul>
@@ -134,7 +134,7 @@
     </div>
 
       <footer>
-        <small>Powered by Jekyll - Theme: <a href="https://github.com/m3xm/hikari-for-Jekyll">hikari</a> - &copy; {{ site.author }}</small>
+        <small>&copy; 2020 ALL RIGHTS RESERVED -  {{ site.author }}</small>
       </footer>
 
     </div>

@@ -8,6 +8,7 @@ layout: default
       <h5 class="page-date">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
           {{ page.date | date_to_long_string }}
+          {{ post.author }}
         </time>
       </h5>
     </div>
@@ -16,11 +17,11 @@ layout: default
     <div itemprop="articleBody">
       {{ content }}
     </div>
-    <div class="feat share">
-      <a href="http://twitter.com/share" class="popup">
-        <span class="icon-twitter"></span>
-      </a>
-    </div>
+    <a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}">
+      <div class="back-to-blog">
+      ← Back to blog posts
+      </div>
+    </a>
     {% if page.next %}
       <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
         <span class="nav-title nav-title-next">newer</span> &rarr;

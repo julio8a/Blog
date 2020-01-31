@@ -99,7 +99,7 @@ $(function() {
 		  $("#contact").removeClass("visible");
 		  rubOpen = false;
 		}
-	  
+
 	  
   }); //function
   

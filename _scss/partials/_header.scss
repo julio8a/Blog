@@ -46,6 +46,7 @@ body {
 
 
 #logo {
+  padding: 0;
 	@include break(1109px) {
 		margin-left: 15px;
 	}
@@ -59,9 +60,9 @@ body {
 		margin: 0;
 		padding: 10px 0 0 0;
 		margin-top: 0px;
-		width:150px;
+		width:140px;
 		float:left;
-		font-size: 1.7rem;
+		font-size: 23.8px;
 	}
 	img {
 		margin-top: 5px;
@@ -76,7 +77,7 @@ nav {
 	ul {
 		padding: 0;
 		float: right;
-    margin-top: 13px;
+		margin-top: 14px;
 		li {
 			display: inline;
 			img {
@@ -90,10 +91,10 @@ nav {
 	}
 	a {
 		color: #222;
-		padding: 5px 20px;
-		font-size: 1.13rem;
+		padding: 5px 20px 5px 19.5px;
+		font-size: 15.82px;
 		border: 1px solid transparent;
-    text-decoration: none;
+    	text-decoration: none;
 		&:hover {
 			color: #007ac2;
 		}
