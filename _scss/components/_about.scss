@@ -1,10 +1,12 @@
+// About and contact
+
 #about, #contact {
 	overflow: scroll;
 	position:fixed;
 	width:100%;
 	height:550px;
 	margin-top:-550px;
-	background: $white;
+	background: #fff;
 	z-index:15;
 	transition: left 0s ease-out, margin-top .5s ease-out;
 	&.debut {
@@ -15,21 +17,21 @@
 		transition: left 0.3s ease-out, margin-top 0.3s ease-out;
 	}
 	h3 {
-		color: $dark-gray;
-		font-size: 2rem;
+		color: #222;
 		margin: 50px 0 20px 0;
 		letter-spacing: 1px;
 		font-weight: normal;
+		font-size: 28px !important;
 	}
 	p {
-		line-height: 1.5rem;
-		letter-spacing: 0.6px
+		line-height: 21px;
+		letter-spacing: 0.6px;
+		font-size: 14px;
 	}
 	a {
-		color: $color-main;
-		font-size: 1rem;
+		color: #007ac2;
 		text-decoration: none;
-		border-bottom: $border-blue;
+		border-bottom: 1px solid #007ac2;
 	}
 }
 
@@ -53,7 +55,6 @@
 	font-weight:normal;
 	-webkit-font-smoothing:antialiased;
 	color:#666;
-	font-size: 1rem;
 	line-height:20px;
 	letter-spacing:1px;
 }
@@ -68,19 +69,26 @@
 	font-weight:normal;
 	-webkit-font-smoothing:antialiased;
 	color:#666;
-	font-size: 1rem;
 	line-height:20px;
 	letter-spacing:1px;
 	ul {
 		padding: 0;
 		li {
 			margin: 5px;
+			font-size: 14px;
+			}
 		}
-	}
 }
 
 
 #experience {
+	small {
+		font-size: 11.6667px;
+	}
+	p {
+		font-size: 12.6px;
+		margin: 0 0 15px 0;
+	}
 	@include break(991px) {
 		margin-left: 50px;
 	}
@@ -93,7 +101,6 @@
 	font-weight:normal;
 	-webkit-font-smoothing:antialiased;
 	color:#666;
-	font-size: 1rem;
 	line-height:20px;
 	letter-spacing:1px;
 	small {
@@ -104,18 +111,19 @@
 
 
 span.job-title {
-	font-size:.9rem;
 	color:#444;
 	letter-spacing:0;
 }
 
 #contactleft, #contactright {
+	legend {
+		font-size: 14px;
+	}
 	float:left;
 	width:315px;
 	font-weight:normal;
 	-webkit-font-smoothing:antialiased;
 	color:#777;
-	font-size: 1rem;
 	line-height:20px;
 	letter-spacing:1px;
 }
@@ -138,7 +146,7 @@ span.job-title {
 			padding-top: 10px;
 			padding-bottom: 10px;
 		}
-		width: 273px;
+		width: 100%;
 	}
 	h3 {
 		@include break(738px) {
@@ -164,7 +172,7 @@ span.job-title {
 		@include break(738px) {
 			height: 50px;
 		}
-		width:573px;
+		width: 100%;
 		height:214px;
 	}
 	legend {
@@ -176,11 +184,11 @@ span.job-title {
 }
 
 input, textarea {
-	border: $border-medium;
+	border: 1px solid #aaa;
 	padding:15px 20px;
 	margin-top:10px;
 	margin-bottom:25px;
-	background:$white;
+	background:#fff;
 	color:#666;
 }
 
@@ -194,18 +202,17 @@ input.envoyer {
 		float: left;
 		margin-top: -10px;
 	}
-	background:$white;
+	background:#fff;
 	border:1px solid #aaa;
 	color:#444;
 	text-transform:uppercase;
-	width:180px;
 	cursor:pointer;
 	font-weight:bold;
-	@include rounded(0);
+	border-radius: 0;
 	margin: -10px 0 0 0;
 	float: right;
 	&:hover {
-		border: $border-blue;
+		border: blue;
 		color: #007ac2;
 	}
 }
@@ -215,4 +222,11 @@ input.envoyer {
 	}
 	width:980px;
 	margin:0 auto;
+}
+.resume, .contact-me {
+	float: right;
+	display: inline;
+    color: #007ac2;
+	margin: -40px 30px 0 0;
+	font-size: 14px;
 }
