@@ -7,12 +7,17 @@ $(function() {
 			$(this).addClass("current");
 		  }
 		  else {
+			if(aboutOpen == true) {
+			  $("#header a").removeClass("current");
+			  aboutOpen = false;
+			  menuferme();
+			  $(this).addClass("current");
+			}
 			if(contactOpen == true) {
 			  $("#header a").removeClass("current");
+			  contactOpen = false;
+			  menuferme();
 			  $(this).addClass("current");
-			  $(".blog").addClass("current");
-			}
-			else {
 			}
 		  }
 		  return false;

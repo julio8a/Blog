@@ -13,14 +13,6 @@ baseurl: ""
 # A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
 author-bio: "About me"
 
-# Social Accounts (mine, as placeholders)
-
-twitter: julio8a
-github: julio8a
-dribbble: julio8a
-instagram: julio8a
-linkedIn: julio8a
-
 # Google Analytics (you may want to changes these with yours or even delete :)
 
 ga_domain: julio8a.com
